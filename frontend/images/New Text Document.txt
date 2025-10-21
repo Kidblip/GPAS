@@ -1,0 +1,12 @@
+$ netstat -an | findstr :8000
+
+$ cd ../Documents/Graphical/backend && python -m uvicorn main:app --reload
+
+
+[
+  {"image_index": 0, "grid": [1, 5]},  
+  {"image_index": 1, "grid": [2,5]},
+  {"image_index": 2, "grid": [3, 6]},      
+  {"image_index": 3, "grid": [4, 7]}, 
+  {"image_index": 4, "grid": [5,8]}         
+]

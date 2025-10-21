@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="validation.js" defer></script>
+  <script src="Login-graphical.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Login</h1>
+    <p id="error-message"></p>
+    <form id="form">
+      <div>
+        <label for="email-input">
+          <span class="uni">@</span>
+        </label>
+        <input type="email" name="email" id="email-input" placeholder="E-mail" />
+      </div>
+      <div>
+        <button type="button" onclick="openLoginGraphicalModal()">Enter Graphical Password</button>
+        <input type="hidden" id="login-graphical-password" name="graphical_password" />
+        <p id="login-password-status"></p>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p>New here? <a href="signup.html">Create an Account</a></p>
+  </div>
+
+  <!-- ✅ Updated ID to match login modal in JavaScript -->
+  <div id="login-graphical-modal" class="modal hidden"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Success</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="success-wrapper">
+    <h1>🎉 Login Successful!</h1>
+    <p>Welcome back! You’ve successfully logged into the system.</p>
+    <a href="login.html" class="button">Log out</a>
+</div>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const firstname = urlParams.get('firstname');
+
+if (firstname) {
+    const p = document.querySelector('.success-wrapper p');
+    p.textContent = `Welcome back, ${firstname}! You’ve successfully logged into the system.`;
+}
+</script>
+
+</body>
+</html>
